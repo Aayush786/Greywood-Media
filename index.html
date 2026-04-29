@@ -21,57 +21,44 @@
                     <span class="logo-tagline">Media</span>
                 </div>
             </a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-            <a href="#contact" class="nav-cta">Get Started</a>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+            <!-- Navigation -->
+            <nav class="navbar">
+                ...existing code...
+            </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" id="home">
-        <div class="hero-bg">
-            <div class="hero-particles"></div>
-            <div class="hero-gradient"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                <span>Trusted by 500+ Brands Worldwide</span>
-            </div>
-            <h1 class="hero-title">
-                We Create <span class="highlight">Digital Experiences</span> That Convert
-            </h1>
-            <p class="hero-subtitle">
-                Award-winning digital marketing agency specializing in branding, web design, 
-                social media strategy, and creative campaigns that drive real business growth.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact" class="cta-btn primary">
-                    <span>Start Your Project</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#portfolio" class="cta-btn secondary">
-                    <i class="fas fa-play"></i>
-                    <span>View Our Work</span>
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Projects Delivered</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
+            <!-- Hero Section -->
+            <header class="hero" id="home">
+                ...existing code...
+            </header>
+
+            <div id="include-services"></div>
+            <div id="include-process"></div>
+            <div id="include-portfolio"></div>
+            <div id="include-testimonials"></div>
+            <div id="include-pricing"></div>
+            <div id="include-faq"></div>
+            <div id="include-contact"></div>
+            <div id="include-footer"></div>
+
+            <script src="script.js"></script>
+            <script>
+            // Simple HTML include loader
+            const includes = [
+              {id: 'include-services', file: 'services.html'},
+              {id: 'include-process', file: 'process.html'},
+              {id: 'include-portfolio', file: 'portfolio.html'},
+              {id: 'include-testimonials', file: 'testimonials.html'},
+              {id: 'include-pricing', file: 'pricing.html'},
+              {id: 'include-faq', file: 'faq.html'},
+              {id: 'include-contact', file: 'contact.html'},
+              {id: 'include-footer', file: 'footer.html'}
+            ];
+            includes.forEach(({id, file}) => {
+              fetch(file)
+                .then(res => res.text())
+                .then(html => { document.getElementById(id).innerHTML = html; });
+            });
+            </script>
                     <span class="stat-number">50+</span>
                     <span class="stat-label">Countries Served</span>
                 </div>
