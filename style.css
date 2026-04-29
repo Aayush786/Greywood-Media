@@ -118,6 +118,13 @@ ul {
     font-size: 1.4rem;
 }
 
+.logo-img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+}
+
 .logo-text {
     display: flex;
     flex-direction: column;
@@ -1290,6 +1297,13 @@ ul {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
+}
+
+.footer-logo .logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: var(--radius-md);
 }
 
 .footer-logo .logo-text {
