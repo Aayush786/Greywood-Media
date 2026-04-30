@@ -678,9 +678,10 @@ ul {
 }
 
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
     margin-bottom: 2rem;
 }
 
@@ -690,6 +691,9 @@ ul {
     overflow: hidden;
     aspect-ratio: 4/3;
     cursor: pointer;
+    width: 450px;
+    min-width: 450px;
+    flex: 0 0 auto;
 }
 
 .portfolio-item img {
