@@ -466,16 +466,15 @@ ul {
 
 .services-grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1.5rem;
     flex-wrap: nowrap;
-    overflow-x: auto;
 }
 
 .service-card {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
+    flex: 0 0 auto;
+    width: calc(20% - 1.2rem);
+    min-width: 200px;
     background: var(--bg-white);
     border: 1px solid #e2e8f0;
     border-radius: var(--radius-lg);
@@ -573,9 +572,10 @@ ul {
 }
 
 .process-timeline {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
 }
 
 .process-step {
@@ -911,9 +911,10 @@ ul {
 }
 
 .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
     margin-bottom: 2rem;
 }
 
@@ -1519,6 +1520,14 @@ ul {
         min-width: 280px;
         max-width: none;
         flex: none;
+    }
+    
+    .process-timeline,
+    .pricing-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
     }
     
     .faq-grid {
