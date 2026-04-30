@@ -473,8 +473,8 @@ ul {
 
 .service-card {
     flex: 0 0 auto;
-    width: 280px;
-    min-width: 280px;
+    width: 350px;
+    min-width: 350px;
     background: var(--bg-white);
     border: 1px solid #e2e8f0;
     border-radius: var(--radius-lg);
@@ -585,6 +585,9 @@ ul {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     transition: var(--transition);
+    width: 350px;
+    min-width: 350px;
+    flex: 0 0 auto;
 }
 
 .process-step:hover {
@@ -925,6 +928,9 @@ ul {
     box-shadow: var(--shadow-md);
     transition: var(--transition);
     position: relative;
+    width: 350px;
+    min-width: 350px;
+    flex: 0 0 auto;
 }
 
 .pricing-card:hover {
