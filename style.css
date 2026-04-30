@@ -467,14 +467,14 @@ ul {
 .services-grid {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: nowrap;
 }
 
 .service-card {
     flex: 0 0 auto;
-    width: calc(20% - 1.2rem);
-    min-width: 200px;
+    width: 280px;
+    min-width: 280px;
     background: var(--bg-white);
     border: 1px solid #e2e8f0;
     border-radius: var(--radius-lg);
@@ -574,7 +574,7 @@ ul {
 .process-timeline {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: nowrap;
 }
 
@@ -913,7 +913,7 @@ ul {
 .pricing-grid {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: nowrap;
     margin-bottom: 2rem;
 }
