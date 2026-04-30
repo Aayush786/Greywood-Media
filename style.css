@@ -465,12 +465,17 @@ ul {
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .service-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
     background: var(--bg-white);
     border: 1px solid #e2e8f0;
     border-radius: var(--radius-lg);
@@ -1503,11 +1508,17 @@ ul {
         font-size: 2rem;
     }
     
-    .services-grid,
-    .process-timeline,
-    .portfolio-grid,
-    .pricing-grid {
-        grid-template-columns: 1fr;
+    .services-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        min-width: 280px;
+        max-width: none;
+        flex: none;
     }
     
     .faq-grid {
