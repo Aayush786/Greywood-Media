@@ -212,9 +212,13 @@ ul {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: var(--secondary);
+    background: linear-gradient(120deg, #0f172a 0%, #1e293b 100%);
+    color: #f1f5f9;
     overflow: hidden;
     padding: 6rem 2rem 4rem;
+    text-align: center;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 4px 24px rgba(15,23,42,0.25);
 }
 
 .hero-bg {
